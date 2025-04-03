@@ -70,15 +70,17 @@ export default function Home() {
 
   return (
     <>
+      <div className="pt-2 px-2 bg-white sticky top-0 z-50">
+        <div className="p-5 m-2 bg-stone-800 text-white rounded-lg flex items-center">
+          <h1 className="text-2xl font-bold">知識推薦獲取來源</h1>
+          <div className='flex-1 flex justify-end items-center'>
+            <a className="p-2 hover:bg-stone-500 rounded-md"
+              href="http://lianglu.uk" target='_blank'>個人網頁</a>
+          </div>
+        </div>
+      </div >
       <div className="min-h-screen bg-gray-50 px-4 py-10">
         <div className="max-w-6xl mx-auto">
-          <div className="p-5 m-2 bg-stone-800 text-white rounded-lg flex items-center">
-            <h1 className="text-2xl font-bold">知識推薦獲取來源</h1>
-            <div className='flex-1 flex justify-end items-center'>
-              <a className="p-2 hover:bg-stone-500 rounded-md"
-                href="http://lianglu.uk" target='_blank'>個人網頁</a>
-            </div>
-          </div>
 
           {/* ✅ Loading 提示 */}
           {loading ? (
