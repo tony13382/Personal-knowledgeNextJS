@@ -70,7 +70,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="pt-2 px-2 bg-white sticky top-0 z-50">
+      <div className="pt-2 px-2 bg-gray-50 sticky top-0 z-50">
         <div className="p-5 m-2 bg-stone-800 text-white rounded-lg flex items-center">
           <h1 className="text-2xl font-bold">知識推薦獲取來源</h1>
           <div className='flex-1 flex justify-end items-center'>
