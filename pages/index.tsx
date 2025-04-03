@@ -26,18 +26,13 @@ export default function Home() {
         const json = await res.json()
         setTypes(json.types)
         setTags(json.tags)
-        setLinks(json.links)
+        // 對 links 進行升冪排序
+        const sortedLinks = json.links.sort((a: LinkItem, b: LinkItem) =>
+          a.name.localeCompare(b.name)
+        )
+        setLinks(sortedLinks)
       } catch (err) {
-/*************  ✨ Codeium Command ⭐  *************/
-  /**
-   * Toggle a tag in the selected tags state.
-   *
-   * If the tag is already selected, it will be removed from the selected tags.
-   * If the tag is not selected, it will be added to the selected tags.
-   *
-   * @param {string} tag The tag to toggle.
-   */
-/******  7f223772-dcf2-4464-9952-79e6407b7dee  *******/        console.error('取得資料失敗', err)
+        console.error('取得資料失敗', err)
       } finally {
         setLoading(false) // 完成時設為 false
       }
