@@ -6,6 +6,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.png" />
+        <title>知識來源推薦・Liang</title>
         <meta name="theme-color" content="#ffffff" />
         <meta name="description" content="我的知識推薦獲取來源" />
         <link
